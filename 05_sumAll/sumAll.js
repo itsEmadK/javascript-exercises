@@ -1,6 +1,10 @@
 const sumAll = function (start, end) {
 
-    if (+start < 0 || end < 0){
+    if (
+        +start < -1 || end < -1 ||
+        !Number.isInteger(start) ||
+        !Number.isInteger(end)
+    ) {
         return "ERROR";
     }
 
