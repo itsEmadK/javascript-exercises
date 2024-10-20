@@ -1,4 +1,9 @@
 const sumAll = function (start, end) {
+
+    if (+start < -1 || end < -1){
+        return "ERROR";
+    }
+
     let sum = 0;
     for (
         let i = (start < end ? start : end);
