@@ -1,7 +1,11 @@
-const removeFromArray = function (array, valueToRemove) {
-    return array.filter(
-        (item) => item !== valueToRemove
-    )
+const removeFromArray = function (array, ...valuesToRemove) {
+    let newArray = array;
+    for (const value of valuesToRemove) {
+        newArray = newArray.filter(
+            (item) => item !== value
+        );
+    }
+    return newArray;
 };
 
 
