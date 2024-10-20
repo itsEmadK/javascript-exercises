@@ -1,9 +1,9 @@
 const removeFromArray = function (array, valueToRemove) {
-    return array.toSpliced(
-        array.indexOf(valueToRemove),
-        1
-    );
+    return array.filter(
+        (item) => item !== valueToRemove
+    )
 };
+
 
 // Do not edit below this line
 module.exports = removeFromArray;
