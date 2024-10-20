@@ -1,6 +1,6 @@
 const sumAll = function (start, end) {
 
-    if (+start < -1 || end < -1){
+    if (+start < 0 || end < 0){
         return "ERROR";
     }
 
